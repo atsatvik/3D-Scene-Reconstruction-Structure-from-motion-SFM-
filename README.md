@@ -15,7 +15,7 @@ Structure from Motion (SfM) was a computer vision technique that reconstructed a
      Identified key features using SIFT detector:
      <br>
      <img src="results/feature_det.PNG" alt="Feature matching using SIFT">
-   </div>
+</div>
 
 
 2. **Estimating Fundamental Matrix:**
