@@ -71,7 +71,7 @@ Structure from Motion (SfM) was a computer vision technique that reconstructed a
 <div>
      Sparse 3D reconstruction after Bundle Adjustment (GTSAM):
      <br>
-     <img src="results/3D_reconstruct_after_optim" alt="Camera poses before GTSAM">
+     <img src="results/3D_reconstruct_after_optim.PNG" alt="Sparse 3D reconstruction after Bundle Adjustment">
 </div>
 
 ## Implementation
