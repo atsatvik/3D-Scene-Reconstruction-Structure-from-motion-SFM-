@@ -17,6 +17,9 @@ Structure from Motion (SfM) was a computer vision technique that reconstructed a
    - Calculated the Fundamental Matrix, a fundamental geometric relationship between image pairs.
    - Described the epipolar geometry between two views.
 
+![Visualizing Epipolar lines using Fundamental matrix](results/epipolar_lines.PNG)
+
+
 3. **Estimating Essential Matrix from Fundamental Matrix:**
    - Derived the Essential Matrix from the Fundamental Matrix by incorporating camera intrinsic parameters.
    - The Essential Matrix encapsulated information about the relative pose of the cameras.
