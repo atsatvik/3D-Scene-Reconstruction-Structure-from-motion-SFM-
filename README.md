@@ -52,7 +52,7 @@ Structure from Motion (SfM) was a computer vision technique that reconstructed a
    - This step refined the initial camera poses obtained from the Essential Matrix.
 
 <div>
-     Sparse 3D reconstruction before Bundle Adjustment (GTSAM):
+     Sparse 3D reconstruction before Bundle Adjustment using PNP algorithm (GTSAM):
      <br>
      <img src="results/3D_reconstruct_before_optim.PNG" alt="Sparse 3D reconstruction before GTSAM">
 </div>
@@ -78,6 +78,6 @@ Structure from Motion (SfM) was a computer vision technique that reconstructed a
    - The implementation of these steps in the project involved using libraries like OpenCV for fundamental and essential matrix calculations, GTSAM for bundle adjustment, and other relevant computer vision libraries.
 
 ## Usage
-   - Clear instructions were provided on how to use the SfM algorithm in the project, specifying input requirements and expected output.
+   - Place the image in the directory as mentioned in the code and run all cells.
 
 By following these steps, the SfM algorithm effectively reconstructed 3D scenes from a series of 2D images, providing valuable insights into the structure and motion of the observed environment.
