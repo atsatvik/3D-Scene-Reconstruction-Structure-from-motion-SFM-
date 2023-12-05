@@ -10,6 +10,7 @@ Structure from Motion (SfM) was a computer vision technique that reconstructed a
    - Utilized the Random Sample Consensus (RANSAC) algorithm to robustly match these features across images.
    - Eliminated outliers to improve the accuracy of subsequent steps.
 
+Feature matching using SIFT
 ![Feature matching using SIFT](results/feature_det.PNG)
 
 
@@ -17,6 +18,7 @@ Structure from Motion (SfM) was a computer vision technique that reconstructed a
    - Calculated the Fundamental Matrix, a fundamental geometric relationship between image pairs.
    - Described the epipolar geometry between two views.
 
+Visualizing Epipolar lines using Fundamental matrix
 ![Visualizing Epipolar lines using Fundamental matrix](results/epipolar_lines.PNG)
 
 
