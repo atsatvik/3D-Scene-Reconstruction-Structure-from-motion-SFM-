@@ -22,8 +22,11 @@ Structure from Motion (SfM) was a computer vision technique that reconstructed a
    - Calculated the Fundamental Matrix, a fundamental geometric relationship between image pairs.
    - Described the epipolar geometry between two views.
 
-Visualizing Epipolar lines using Fundamental matrix
-![Visualizing Epipolar lines using Fundamental matrix](results/epipolar_lines.PNG)
+<div>
+     Visualizing Epipolar lines using Fundamental matrix:
+     <br>
+     <img src="results/epipolar_lines.PNG" alt="Visualizing Epipolar lines">
+</div>
 
 
 3. **Estimating Essential Matrix from Fundamental Matrix:**
@@ -33,18 +36,43 @@ Visualizing Epipolar lines using Fundamental matrix
 4. **Estimate Camera Pose from Essential Matrix:**
    - Extracted camera poses (rotation and translation) from the Essential Matrix.
    - Recovered the motion of the camera in relation to the scene.
+  
+<div>
+     Plotting camera poses before Bundle Adjustment (GTSAM):
+     <br>
+     <img src="results/camera_poses_before_optim.PNG" alt="Camera poses before GTSAM">
+</div>
 
 5. **Check for Cheirality Condition using Triangulation:**
-   - Ensured that the reconstructed points lie in front of both cameras by applying the cheirality condition.
+   - Ensured that the reconstructed points lie in front of both cameras by applying the chirality condition.
    - Discarded points violating this condition as they may be behind one of the cameras.
 
 6. **Perspective-n-Point:**
    - Utilized the Perspective-n-Point (PnP) algorithm to estimate the 3D position of the matched points in the world coordinates.
    - This step refined the initial camera poses obtained from the Essential Matrix.
 
+<div>
+     Sparse 3D reconstruction before Bundle Adjustment (GTSAM):
+     <br>
+     <img src="results/3D_reconstruct_before_optim" alt="Camera poses before GTSAM">
+</div>
+
 7. **Bundle Adjustment (using GTSAM):**
    - Optimized the entire reconstruction by jointly refining camera poses and 3D points.
    - Leveraged the Generalized Trajectory Optimization (GTSAM) library for efficient bundle adjustment.
+  
+<div>
+     Plotting camera poses after bundle adjustment (GTSAM):
+     <br>
+     <img src="results/camera_poses_after_optim.PNG" alt="Camera poses before GTSAM">
+</div>
+
+
+<div>
+     Sparse 3D reconstruction after Bundle Adjustment (GTSAM):
+     <br>
+     <img src="results/3D_reconstruct_after_optim" alt="Camera poses before GTSAM">
+</div>
 
 ## Implementation
    - The implementation of these steps in the project involved using libraries like OpenCV for fundamental and essential matrix calculations, GTSAM for bundle adjustment, and other relevant computer vision libraries.
